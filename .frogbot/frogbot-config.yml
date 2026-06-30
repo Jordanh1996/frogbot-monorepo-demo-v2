@@ -4,6 +4,7 @@
         - main
       repoName: "frogbot-monorepo-demo-v2"
     scan:
+      skipAutoFix: true
       projects:
         - workingDirs:
             - frontend
