@@ -27,4 +27,5 @@ jobs:
           JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}
           JF_USE_LOCAL_REPOSITORY: true
+          JF_UPLOAD_SBOM_TO_VCS: "true"
           JF_FAIL: "FALSE"

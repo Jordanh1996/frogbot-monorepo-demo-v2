@@ -1,6 +1,6 @@
 # frogbot-monorepo-demo-v2
 
-Private monorepo demo for **Frogbot V2** against `https://tokyoshiftleft.jfrog.io/`.
+Public monorepo demo for **Frogbot V2** against `https://tokyoshiftleft.jfrog.io/`.
 
 V2 counterpart of [frogbot-monorepo-demo](https://github.com/Jordanh1996/frogbot-monorepo-demo) — same layout and seeded CVEs, different Frogbot action tag.
 
@@ -22,3 +22,9 @@ Two sub-projects, each with seeded CVEs on `main`:
 
 V2 reads scanner settings from the repo-local `frogbot-config.yml` (no Config Profile).
 Auto-fix is disabled (`skipAutoFix: true`); workflows set `JF_FAIL: "FALSE"` so CI stays green while findings appear in logs/comments.
+
+## GitHub Security
+
+Same integration as the [v3 counterpart](https://github.com/Jordanh1996/frogbot-monorepo-demo) — see
+[Frogbot GitHub scan results docs](https://docs.jfrog.com/security/docs/github-1). Workflows set
+`JF_UPLOAD_SBOM_TO_VCS` and `JF_UPLOAD_PR_SECURITY_RESULTS_TO_VCS` for Dependency Graph + Security tab.
