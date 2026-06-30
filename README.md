@@ -28,3 +28,9 @@ Auto-fix is disabled (`skipAutoFix: true`); workflows set `JF_FAIL: "FALSE"` so 
 Same integration as the [v3 counterpart](https://github.com/Jordanh1996/frogbot-monorepo-demo) — see
 [Frogbot GitHub scan results docs](https://docs.jfrog.com/security/docs/github-1). Workflows set
 `JF_UPLOAD_SBOM_TO_VCS` and `JF_UPLOAD_PR_SECURITY_RESULTS_TO_VCS` for Dependency Graph + Security tab.
+
+**V2 on public repos** requires a GitHub **`frogbot` environment** (with reviewers) and
+`environment: frogbot` in the PR workflow. The first PR scan may wait for deployment approval.
+
+Dependency graph SBOM upload also requires vulnerability alerts enabled on the repo
+(`PUT /repos/{owner}/{repo}/vulnerability-alerts`).
