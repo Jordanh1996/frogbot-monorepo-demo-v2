@@ -1,0 +1,12 @@
+- params:
+    git:
+      branches:
+        - main
+      repoName: "frogbot-monorepo-demo-v2"
+    scan:
+      projects:
+        - workingDirs:
+            - frontend
+        - workingDirs:
+            - backend
+          pipRequirementsFile: requirements.txt
