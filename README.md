@@ -21,3 +21,4 @@ Two sub-projects, each with seeded CVEs on `main`:
 - `.github/workflows/frogbot-scan-pull-request.yml` — diff scan on PRs (`jfrog/frogbot@v2`)
 
 V2 reads scanner settings from the repo-local `frogbot-config.yml` (no Config Profile).
+Auto-fix is disabled (`skipAutoFix: true`); workflows set `JF_FAIL: "FALSE"` so CI stays green while findings appear in logs/comments.
